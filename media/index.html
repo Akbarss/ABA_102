@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accordion Example</title>
+	<style>
+		.accordion input[type="checkbox"] {
+			display: none;
+		}
+
+		.accordion .content {
+			display: none;
+			padding: 10px;
+			background-color: #f9f9f9;
+		}
+
+		.accordion input[type="checkbox"]:checked+.content {
+			display: block;
+		}
+
+		.accordion label {
+			display: block;
+			cursor: pointer;
+			padding: 10px;
+			background-color: #e9e9e9;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="accordion">
+		<label for="item1">Item 1</label>
+		<input type="checkbox" id="item1">
+		<div class="content">
+			<p>Content for Item 1 goes here.</p>
+		</div>
+
+		<label for="item2">Item 2</label>
+		<input type="checkbox" id="item2">
+		<div class="content">
+			<p>Content for Item 2 goes here.</p>
+		</div>
+
+		<label for="item3">Item 3</label>
+		<input type="checkbox" id="item3">
+		<div class="content">
+			<p>Content for Item 3 goes here.</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
